@@ -7,36 +7,50 @@ p{
     font-family: verdana;
     font-size: 100%
 	border: 1px solid black;
-    margin: 0px 10px 0px 10px;
+    margin: 50px 10px 50px 10px;
 	padding: 15px 30px; 
-    background: #FFFF00;
+    background: #99FFFF;
     width: 5px;
     border-radius: 5px;
 	text-align: center;
 	cursor: pointer;
 	display: table-cell;
 	font-weight: 10px;
+	
 }
 
 p:hover {
-    background-color: lightgreen;
+    background-color: #66FF33;
 }
 
 p:active {
     background-color: hotpink;
 } 
-
+h1{
+	color: #FF0099;
+    font-family: verdana;
+	text-align: center;
+ }
+textarea{
+	font-family: verdana;
+	font-size: 30px;
+	background: #FFFF00;
+	border: 2px solid black;
+ }
+ body {
+    background-color: black;
+}
 	</style>
 </head>
 <body>
 
 <div>
-	<h2>Typing HERE</h2>
+	<h1>Let's Type</h1>
 
 </div>
-<div id="key">
 
-</div>
+<center><textarea id="key" rows="5" cols="50"></textarea></center></br>
+<center>
 	<p onclick='love(this.innerHTML)' >1</p>
 	<p onclick='love(this.innerHTML)' >2</p>
 	<p onclick='love(this.innerHTML)' >3</p>
@@ -79,6 +93,7 @@ p:active {
 	<p onclick='love(this.innerHTML)'>_</p>
 	<p onclick='bar(this.innerHTML)'>spacebar</p>
 	<p onclick='cle()'>Clear</p>
+	</center>
 <script src='js/index.js'></script>
 <script src='build/main.bundle.js'></script>
 </body>
